@@ -1,0 +1,5 @@
+com/manish/api/automation/util/TestUtil.class
+com/manish/api/automation/util/GraphQLQuery.class
+com/manish/api/automation/merchant/SampleServiceTest.class
+com/manish/api/automation/MathSuiteExecution.class
+com/manish/api/automation/TestSuiteExecution.class
