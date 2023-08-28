@@ -25,7 +25,7 @@ public class MathSuiteExecution extends TestUtil {
     @Feature("Test CICD")
     @Severity(SeverityLevel.BLOCKER)
     public void subtract() {
-        System.out.println("add executed");
+        System.out.println("add executed.......");
 
     }
 
@@ -34,6 +34,6 @@ public class MathSuiteExecution extends TestUtil {
     @Feature("Test CICD")
     @Severity(SeverityLevel.BLOCKER)
     public void multiply() {
-        System.out.println("multiply executed");
+        System.out.println("multiply executed......");
     }
 }
