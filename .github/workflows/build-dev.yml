@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - master # the name of your main branch
-  pull_request:
-    types: [opened, synchronize, reopened]
+
 
 jobs:
-  all-tests:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -33,4 +33,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sonarqube-org_demoSonarQube_AYo63vBrafMVoavM3ljD -Dsonar.projectName='demoSonarQube'
